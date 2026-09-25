@@ -1,0 +1,78 @@
+{
+  "entities": {
+    "users": {
+      "title": "users",
+      "description": "Registered user accounts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "description": "User ID" },
+        "uid": { "type": "string", "description": "Auth UID" },
+        "name": { "type": "string", "description": "User full name" },
+        "email": { "type": "string", "description": "User email address" },
+        "isVerified": { "type": "boolean", "description": "Verification status" },
+        "createdAt": { "type": "string", "description": "ISO creation timestamp" }
+      },
+      "required": ["name", "email"]
+    },
+    "products": {
+      "title": "products",
+      "description": "Store software products",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "description": "Product ID" },
+        "name": { "type": "string", "description": "Product name" },
+        "price": { "type": "number", "description": "Price in USDT" },
+        "description": { "type": "string", "description": "Description" },
+        "apkFile": { "type": "string", "description": "Filename of downloadable APK" },
+        "displayOrder": { "type": "number", "description": "Display order" }
+      },
+      "required": ["id", "name", "price"]
+    },
+    "orders": {
+      "title": "orders",
+      "description": "Customer digital orders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "description": "Order ID" },
+        "userId": { "type": "string", "description": "User UID or ID" },
+        "userEmail": { "type": "string", "description": "User Email" },
+        "userName": { "type": "string", "description": "User Name" },
+        "totalAmount": { "type": "number", "description": "Total order amount" },
+        "status": { "type": "string", "description": "Order status" },
+        "createdAt": { "type": "string", "description": "ISO timestamp" }
+      },
+      "required": ["userId", "totalAmount"]
+    },
+    "api_keys": {
+      "title": "api_keys",
+      "description": "License keys",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number", "description": "API Key ID" },
+        "userId": { "type": "string", "description": "User UID" },
+        "productId": { "type": "number", "description": "Product ID" },
+        "apiKey": { "type": "string", "description": "Generated API key string" },
+        "status": { "type": "string", "description": "Active or Revoked status" }
+      },
+      "required": ["userId", "apiKey"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/users" },
+      "description": "User profile collection stored by Auth UID"
+    },
+    "/products/{productId}": {
+      "schema": { "$ref": "#/entities/products" },
+      "description": "Software products in store"
+    },
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/orders" },
+      "description": "Customer digital orders"
+    },
+    "/api_keys/{keyId}": {
+      "schema": { "$ref": "#/entities/api_keys" },
+      "description": "Digital license keys"
+    }
+  }
+}

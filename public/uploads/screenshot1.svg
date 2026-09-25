@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2400" width="1080" height="2400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="2400" fill="#070a0c" />
+
+  
+  <!-- Android Status Bar -->
+  <g id="status-bar">
+    <!-- Clock -->
+    <text x="65" y="72" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="700">9:03</text>
+    
+    <!-- WhatsApp Icon -->
+    <g transform="translate(150, 48) scale(0.9)">
+      <circle cx="16" cy="16" r="14" fill="#25d366" />
+      <path d="M22 18.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.3 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.7.8.2 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.6.2-1.7-.1-.2-.3-.3-.6-.4z" fill="#ffffff"/>
+    </g>
+
+    <!-- Right-aligned Network & Battery Group -->
+    <g transform="translate(680, 44)">
+      <!-- Speed -->
+      <g transform="translate(-80, 0)">
+        <circle cx="10" cy="12" r="11" fill="none" stroke="#ffffff" stroke-width="2.5" />
+        <path d="M10 6 L10 13 L14 15" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        <text x="32" y="10" fill="#ffffff" font-family="monospace" font-size="19" font-weight="bold">3.71</text>
+        <text x="32" y="24" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold">KB/s</text>
+      </g>
+      
+      <!-- 4G -->
+      <g transform="translate(80, 0)">
+        <text x="0" y="22" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="900">4G</text>
+      </g>
+
+      <!-- Signal Bars -->
+      <g transform="translate(135, 2)">
+        <rect x="0" y="16" width="4" height="8" rx="1" fill="#ffffff"/>
+        <rect x="7" y="12" width="4" height="12" rx="1" fill="#ffffff"/>
+        <rect x="14" y="8" width="4" height="16" rx="1" fill="#ffffff"/>
+        <rect x="21" y="3" width="4" height="21" rx="1" fill="#ffffff"/>
+      </g>
+
+      <!-- Battery -->
+      <g transform="translate(180, 2)">
+        <rect x="0" y="3" width="42" height="20" rx="4" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+        <rect x="42" y="9" width="3" height="8" rx="1" fill="#ffffff"/>
+        <rect x="3" y="6" width="28" height="14" rx="2" fill="#ffffff"/>
+        <text x="56" y="21" fill="#ffffff" font-family="sans-serif" font-size="22" font-weight="bold">78%</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Top App Bar -->
+  <g id="app-header">
+    <!-- Location Pin Rounded Square Icon -->
+    <rect x="42" y="130" width="100" height="100" rx="24" fill="#ffffff" />
+    <path d="M92 154 c -12 0 -22 10 -22 22 c 0 16 22 36 22 36 s 22 -20 22 -36 c 0 -12 -10 -22 -22 -22 z m 0 30 c -4.4 0 -8 -3.6 -8 -8 s 3.6 -8 8 -8 s 8 3.6 8 8 s -3.6 8 -8 8 z" fill="#080c0e"/>
+    
+    <!-- Title & Subtitle -->
+    <text x="175" y="180" fill="#ffffff" font-family="'JetBrains Mono', 'Roboto Mono', monospace" font-size="44" font-weight="900" letter-spacing="4">REPORT  REVIEW</text>
+    <text x="175" y="222" fill="#8e9fa8" font-family="-apple-system, sans-serif" font-size="28" font-weight="400">Report business google maps review</text>
+    
+    <!-- AUTHORIZED pill badge -->
+    <rect x="800" y="145" width="235" height="75" rx="12" fill="#042015" stroke="#10b981" stroke-width="2.5" />
+    <text x="917" y="193" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="800" letter-spacing="3" text-anchor="middle">AUTHORIZED</text>
+  </g>
+
+  <!-- Subheading: SECURE AUDITOR CONSOLE -->
+  <g transform="translate(85, 370)">
+    <g transform="translate(0, -22) scale(1.1)">
+      <!-- Blue Lock Icon -->
+      <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="3" y="11" width="18" height="11" rx="2" fill="#38bdf8"/>
+    </g>
+    <text x="42" y="0" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="30" font-weight="700" letter-spacing="4">SECURE  AUDITOR  CONSOLE</text>
+  </g>
+
+  <!-- CARD 1: API ACCESS -->
+  <g transform="translate(42, 450)">
+    <!-- Container -->
+    <rect width="996" height="520" rx="18" fill="#0d1215" stroke="#1c262c" stroke-width="2" />
+    
+    <!-- Header -->
+    <text x="36" y="55" fill="#9cb0ba" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" letter-spacing="3">API  ACCESS</text>
+    
+    <!-- VERIFIED badge -->
+    <rect x="800" y="24" width="160" height="58" rx="8" fill="#121a1f" stroke="#25343d" stroke-width="2" />
+    <text x="880" y="61" fill="#718694" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" letter-spacing="2" text-anchor="middle">VERIFIED</text>
+
+    <!-- Private API Key Input with cut-out label -->
+    <g transform="translate(36, 120)">
+      <rect width="924" height="130" rx="14" fill="#080c0e" stroke="#00e676" stroke-width="3" />
+      
+      <!-- Label -->
+      <rect x="25" y="-14" width="220" height="28" fill="#0d1215" />
+      <text x="35" y="6" fill="#00e676" font-family="'Inter', sans-serif" font-size="24" font-weight="600">Private API Key</text>
+      
+      <!-- Masked value with cursor -->
+      <text x="40" y="80" fill="#ffffff" font-family="monospace" font-size="44" font-weight="bold" letter-spacing="6">••••••••••</text>
+      <rect x="282" y="44" width="4" height="48" fill="#00e676" />
+    </g>
+
+    <!-- UNLOCK & LOCK Buttons -->
+    <g transform="translate(36, 300)">
+      <!-- UNLOCK (White) -->
+      <rect x="0" y="0" width="445" height="100" rx="12" fill="#ffffff" />
+      <text x="222" y="62" fill="#000000" font-family="'Inter', sans-serif" font-size="30" font-weight="900" letter-spacing="2" text-anchor="middle">UNLOCK</text>
+
+      <!-- LOCK (Dark) -->
+      <rect x="479" y="0" width="445" height="100" rx="12" fill="#12181b" stroke="#253238" stroke-width="2" />
+      <text x="701" y="62" fill="#52646f" font-family="'Inter', sans-serif" font-size="30" font-weight="900" letter-spacing="2" text-anchor="middle">LOCK</text>
+    </g>
+
+    <!-- Key Accepted Message -->
+    <text x="36" y="465" fill="#00e676" font-family="'JetBrains Mono', monospace" font-size="25" font-weight="600">Key accepted. Console operations are fully active.</text>
+  </g>
+
+  <!-- CARD 2: CASE INPUT -->
+  <g transform="translate(42, 1020)">
+    <!-- Container -->
+    <rect width="996" height="1260" rx="18" fill="#0d1215" stroke="#1c262c" stroke-width="2" />
+
+    <!-- Header -->
+    <text x="36" y="62" fill="#9cb0ba" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="700" letter-spacing="3">CASE  INPUT</text>
+    
+    <!-- GBP badge -->
+    <rect x="860" y="28" width="100" height="58" rx="8" fill="#121a1f" stroke="#25343d" stroke-width="2" />
+    <text x="910" y="65" fill="#718694" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" letter-spacing="2" text-anchor="middle">GBP</text>
+
+    <!-- Field 1: Google Places API Key -->
+    <g transform="translate(36, 140)">
+      <rect width="924" height="145" rx="14" fill="#080c0e" stroke="#1f2a30" stroke-width="2" />
+      <text x="45" y="85" fill="#5a6e78" font-family="'Inter', sans-serif" font-size="30">Google Places API Key</text>
+    </g>
+
+    <!-- Field 2: Google Maps Review Link -->
+    <g transform="translate(36, 330)">
+      <rect width="924" height="145" rx="14" fill="#080c0e" stroke="#1f2a30" stroke-width="2" />
+      <text x="45" y="85" fill="#5a6e78" font-family="'Inter', sans-serif" font-size="30">Google Maps Review Link</text>
+    </g>
+
+    <!-- Field 3: Business Name -->
+    <g transform="translate(36, 520)">
+      <rect width="924" height="145" rx="14" fill="#080c0e" stroke="#1f2a30" stroke-width="2" />
+      <text x="45" y="85" fill="#5a6e78" font-family="'Inter', sans-serif" font-size="30">Business Name</text>
+    </g>
+
+    <!-- Field 4: Reviewer Display Name -->
+    <g transform="translate(36, 710)">
+      <rect width="924" height="145" rx="14" fill="#080c0e" stroke="#1f2a30" stroke-width="2" />
+      <text x="45" y="85" fill="#5a6e78" font-family="'Inter', sans-serif" font-size="30">Reviewer Display Name</text>
+    </g>
+
+    <!-- Field 5: Review Text Content (Tall) -->
+    <g transform="translate(36, 900)">
+      <rect width="924" height="260" rx="14" fill="#080c0e" stroke="#1f2a30" stroke-width="2" />
+      <text x="45" y="85" fill="#5a6e78" font-family="'Inter', sans-serif" font-size="30">Review Text Content</text>
+    </g>
+  </g>
+
+  
+  <!-- Android Bottom Gesture Bar -->
+  <rect x="390" y="2360" width="300" height="8" rx="4" fill="#ffffff" fill-opacity="0.8"/>
+</svg>
